@@ -37,7 +37,7 @@ class EquipeController extends AbstractController
     /**
      * @Route("/create/equipe", name="create_equipe")
      * @param Request $request
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @return Response
      * @throws \Exception
      */
     public function create(Request $request)
@@ -77,7 +77,7 @@ class EquipeController extends AbstractController
     }
 
     /**
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @return Response
      * @Route("/read/equipe", name="read_equipe")
      */
     public function read()
@@ -97,5 +97,59 @@ class EquipeController extends AbstractController
         return $this->render('equipe/show.html.twig',[
             'e'=>$equipe
         ]);
+    }
+
+    /**
+     * @param Equipe $equipe
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|Response
+     * @Route("/edit/equipe/{id}", name="edit_equipe")
+     */
+    public function edit(Equipe $equipe, Request $request)
+    {
+        $form=$this->createFormBuilder($equipe)
+            ->add('nom',TextType::class,[
+                'attr'=>[
+                    'placeholder'=>'Nom'
+                ]
+            ])
+            ->add('poste',TextType::class,[
+                'attr'=>[
+                    'placeholder'=>'Poste'
+                ]
+            ])
+            ->add('image',FileType::class,[
+                'data_class'=>null,
+                'required'=>false,
+                'label'=>'Image',
+            ])
+            ->getForm();
+        $form->handleRequest($request);
+        if($form->isSubmitted() && $form->isValid()){
+            $em=$this->getDoctrine()->getManager();
+
+            $file=$equipe->getImage();
+            $filename=md5(uniqid()).'.'.$file->guessExtension();
+            $file->move($this->getParameter('upload_directory'), $filename);
+            $equipe->setImage($filename);
+
+            $em->persist($equipe);
+            $em->flush();
+            return $this->redirectToRoute('read_equipe');
+        }
+
+        return $this->render('equipe/edit.html.twig',['form'=>$form->createView()]);
+    }
+
+    /**
+     * @param Equipe $equipe
+     * @Route("/delete/equipe/{id}", name="delete_equipe")
+     */
+    public function delete(Equipe $equipe)
+    {
+        $em=$this->getDoctrine()->getManager();
+        $em->remove($equipe);
+        $em->flush();
+        return $this->redirectToRoute('read_equipe');
     }
 }

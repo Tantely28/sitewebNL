@@ -2,15 +2,23 @@
 
 {% block title %}Hello RecrutmentController!{% endblock %}
 
-{% block body %}
-    <b>Poste {{ recrut.post }}</b><br>
-    <u><b>Profile</b></u>
-    <p>
-        {{ recrut.profil | raw }}
-    </p>
 
-    <u><b>Mission</b></u>
-    <p>
-        {{ recrut.mission | raw }}
-    </p>
+{% block body %}
+
+    <br>
+    <div class="rec">
+        <b>Poste</b> {{ recrut.post }}<br>
+        <hr>
+            <u><b>Profile</b></u>
+            <p>
+                {{ recrut.profil | raw }}
+            </p>
+                <hr>
+            <u><b>Mission</b></u>
+            <p>
+                {{ recrut.mission | raw }}
+            </p>
+        <hr>
+    </div>
+    <a href="{{ path('affiche_recrut') }}" class="btn btn-warning">OK</a><br>
 {% endblock %}

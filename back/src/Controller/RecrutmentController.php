@@ -8,6 +8,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -77,7 +78,7 @@ class RecrutmentController extends AbstractController
     /**
      * @param Recrutment $recrutment
      * @param Request $request
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     * @return RedirectResponse|Response
      * @Route("/update/recrutment/{id}", name="update_recrutment")
      */
     public function update(Recrutment $recrutment, Request $request)
@@ -101,13 +102,26 @@ class RecrutmentController extends AbstractController
     /**
      * @Route("/show/recrutment/{id}", name="show_recrutment")
      * @param Recrutment $recrutment
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @return Response
      */
     public function show(Recrutment $recrutment):Response
     {
         return $this->render('recrutment/show.html.twig',[
             'recrut'=>$recrutment
         ]);
+    }
+
+    /**
+     * @Route("/delete/recrutement/{id}", name="delete_recrut")
+     * @param Recrutment $recrutment
+     * @return RedirectResponse
+     */
+    public function delete(Recrutment $recrutment)
+    {
+        $em=$this->getDoctrine()->getManager();
+        $em->remove($recrutment);
+        $em->flush();
+        return $this->redirectToRoute("affiche_recrut");
     }
 
 }
