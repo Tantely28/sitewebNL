@@ -19,6 +19,15 @@ class VisitorRepository extends ServiceEntityRepository
         parent::__construct($registry, Visitor::class);
     }
 
+    public function findMessage()
+    {
+        return $this->createQueryBuilder('m')
+            ->orderBy('m.id', 'DESC')
+            ->getQuery()
+            ->getResult()
+            ;
+    }
+
     // /**
     //  * @return Visitor[] Returns an array of Visitor objects
     //  */
