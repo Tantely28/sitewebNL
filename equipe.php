@@ -34,11 +34,11 @@
     <!--End Main Header -->
     
     <!--Page Title-->
-    <section class="page-title" style="background-image:url(images/background/6.jpg)">
+    <section class="page-title" style="background-image:url(images/background/8.jpg)">
         <div class="auto-container">
             <h1></h1>
             <ul class="page-breadcrumb">
-                <li><a href="../index.php">Accueil</a></li>
+                <li style="font-weight: bold; font-size: 20px; text-shadow: 1px 2px 5px #000000 "><a href="../index.php">Accueil</a></li>
                 <li>Equipe</li>
             </ul>
         </div>

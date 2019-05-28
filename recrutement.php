@@ -35,7 +35,7 @@
     	<div class="auto-container">
         	<h1></h1>
             <ul class="page-breadcrumb">
-                <li><a href="index.html">Accueil</a></li>
+                <li style="font-weight: bold; font-size: 20px; text-shadow: 1px 2px 5px #000000 "><a href="index.php">Accueil</a></li>
                 <li>Recrutement</li>
             </ul>
         </div>
@@ -67,7 +67,7 @@
                                     </div>
                                 </div>
                             </figure>
-                            <h3><a href="recrutement-detail.html">Chef de projet</a></h3>
+                            <h3><a href="recrutement-detail.php">Chef de projet</a></h3>
                             <div class="text">15/04/2019</div>
                         </div>
                     </div>

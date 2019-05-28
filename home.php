@@ -4,9 +4,40 @@
         <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_one_wrapper" data-source="gallery">
             <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
                 <ul>
-                	
-                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/main-slider/image-13.png" data-title="Slide Title" data-transition="parallaxvertical">
-                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/main-slider/image-13.png"> 
+                    <li data-description="Slide Description"
+                        data-easein="default"
+                        data-easeout="default"
+                        data-fsmasterspeed="1500"
+                        data-fsslotamount="7"
+                        data-fstransition="fade"
+                        data-hideafterloop="0"
+                        data-hideslideonmobile="off"
+                        data-index="rs-1688"
+                        data-masterspeed="default"
+                        data-param1=""
+                        data-param10=""
+                        data-param2=""
+                        data-param3=""
+                        data-param4=""
+                        data-param5=""
+                        data-param6=""
+                        data-param7=""
+                        data-param8=""
+                        data-param9=""
+                        data-rotate="0"
+                        data-saveperformance="off"
+                        data-slotamount="default"
+                        data-thumb="images/main-slider/image-13.png"
+                        data-title="Slide Title"
+                        data-transition="parallaxvertical">
+
+                    <img alt="" class="rev-slidebg"
+                         data-bgfit="cover"
+                         data-bgparallax="10"
+                         data-bgposition="center center"
+                         data-bgrepeat="no-repeat"
+                         data-no-retina=""
+                         src="images/main-slider/image-13.png">
                     
                     <div class="tp-caption" 
                     data-paddingbottom="[0,0,0,0]"
@@ -45,11 +76,10 @@
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                     >
-                    	<div class="text">NL Technologie en tant qu'entreprise de service numerique,nous vous offrons des conseils en technologie et en editions des logiciels.
-                            Nous offrons aux entreprises l’opportunité de les accompagner 
-                            dans leur transformation numérique.
-
-
+                    	<div class="text">
+                            NL Technologie en tant qu'entreprise de service numerique,nous vous offrons des conseils en
+                            technologie et en editions des logiciels.
+                            Nous offrons aux entreprises l’opportunité de les accompagner dans leur transformation numérique.
                         </div>
                     </div>
                     
@@ -71,14 +101,42 @@
                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                     >
                     	<div class="btns-box">
-                    		<a href="#" class="theme-btn btn-style-one">Savoir plus</a><a href="contact.html" class="theme-btn btn-style-two">Contact </a>
+                    		<a href="service.php" class="theme-btn btn-style-one">Savoir plus</a>
+                            <a href="contact.php" class="theme-btn btn-style-two">Contact </a>
                         </div>
                     </div>
                     
                     </li>
                     
-                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/main-slider/image-13.png" data-title="Slide Title" data-transition="parallaxvertical">
-                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/main-slider/image-13.png"> 
+                    <li data-description="Slide Description"
+                        data-easein="default" data-easeout="default"
+                        data-fsmasterspeed="1500" data-fsslotamount="7"
+                        data-fstransition="fade" data-hideafterloop="0"
+                        data-hideslideonmobile="off" data-index="rs-1689"
+                        data-masterspeed="default"
+                        data-param1=""
+                        data-param10=""
+                        data-param2=""
+                        data-param3=""
+                        data-param4=""
+                        data-param5=""
+                        data-param6=""
+                        data-param7=""
+                        data-param8=""
+                        data-param9=""
+                        data-rotate="0"
+                        data-saveperformance="off"
+                        data-slotamount="default"
+                        data-thumb="images/main-slider/image-13.png"
+                        data-title="Slide Title"
+                        data-transition="parallaxvertical">
+
+                    <img alt="" class="rev-slidebg"
+                         data-bgfit="cover" data-bgparallax="10" d
+                         ata-bgposition="center center"
+                         data-bgrepeat="no-repeat"
+                         data-no-retina=""
+                         src="images/main-slider/equipe.png">
                     
                     <div class="tp-caption" 
                     data-paddingbottom="[0,0,0,0]"
@@ -97,8 +155,7 @@
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                     >
-                    	<h2>Bénéficiez d’une équipe passionnée
-                                 </h2>
+                    	<h2>Bénéficiez d’une équipe passionnée</h2>
                     </div>
                     
                     <div class="tp-caption" 
@@ -118,9 +175,10 @@
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                     >
-                    	<div class="text">Nous mettons à votre disposition une équipe qui
-                           va vous accompagner dans l’identification de vos
-                           besoins.</div>
+                    	<div class="text">
+                            Nous mettons à votre disposition une équipe qui va vous accompagner dans
+                            l’identification de vos besoins.
+                        </div>
                     </div>
                     
                     <div class="tp-caption tp-resizeme" 
@@ -141,14 +199,11 @@
                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                     >
                     	<div class="btns-box">
-                    		<a href="#" class="theme-btn btn-style-one">Savoir plus</a><a href="contact.php" class="theme-btn btn-style-two">Contact</a>
+                    		<a href="service.php" class="theme-btn btn-style-one">Savoir plus</a>
+                            <a href="contact.php" class="theme-btn btn-style-two">Contact</a>
                         </div>
                     </div>
-                    
                     </li>
-                    
-                   
-                    
                 </ul>
             </div>
         </div>
@@ -160,7 +215,7 @@
     	<div class="auto-container">
         	<!--Services Title-->
             <div class="services-title">
-            	<div class="title">Bienvenue dans notre entreprise</div>
+            	<div class="title" style="font-size: 40px; color: #d2b871; text-shadow: 1px 1px #000000;">Bienvenue dans notre entreprise</div>
                 <h2> NL Technologie a été créée afin de vous accompagner tout au long de votre <br>développement pour des projets de transformation digitale. <br>
                 Ainsi, nous mettons tout en œuvre afin que vous ayez la technologie de pointe<br> adaptée à vos besoins pour faciliter la réalisation de vos activités.
                 </h2>
@@ -172,10 +227,10 @@
                 <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box hvr-float-shadow">
                     	<div class="image">
-                        	<a href="market-plans.html"><img src="images/service/mobile.png" alt="" /></a>
+                        	<a href="mobile.php"><img src="images/service/mobile.png" alt="" /></a>
                         </div>
                         <div class="lower-content">
-                        	<h3><a href="">Développement d'Applications Mobiles</a></h3>
+                        	<h3 style="text-align: center;"><a href="mobile.php">Applications Mobiles Hybride et Native</a></h3>
                             <div class="text"></div>
                             <a href="mobile.php" class="read-more">Savoir plus</a>
                         </div>
@@ -186,10 +241,10 @@
                 <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box hvr-float-shadow">
                     	<div class="image">
-                        	<a href=""><img src="images/service/web/web2.png" alt="" /></a>
+                        	<a href="web.php"><img src="images/service/web2.png" alt="" /></a>
                         </div>
                         <div class="lower-content">
-                        	<h3><a href="">Conception et Développement de site ou d'applications Web</a></h3>
+                        	<h3 style="text-align: center;"><a href="web.php">Site ou Applications Web</a></h3>
                             <div class="text"></div>
                             <a href="web.php" class="read-more">Savoir plus</a>
                         </div>
@@ -200,12 +255,12 @@
                 <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box hvr-float-shadow">
                     	<div class="image">
-                        	<a href="market-plans.html"><img src="images/service/BI.png" alt="" /></a>
+                        	<a href="bi.php"><img src="images/service/BI.png" alt="" /></a>
                         </div>
                         <div class="lower-content">
-                        	<h3><a href="">BI</a></h3>
+                        	<h3 style="text-align: center;"><a href="bi.php">BI <br> Business Intelligence</a></h3>
                             <div class="text"></div>
-                            <a href="" class="read-more">Savoir plus</a>
+                            <a href="bi.php" class="read-more">Savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -214,12 +269,12 @@
                 <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box hvr-float-shadow">
                         <div class="image">
-                            <a href="market-plans.html"><img src="images/service/iot.jpg" alt="" /></a>
+                            <a href="iot.php"><img src="images/service/iot.jpg" alt="" /></a>
                         </div>
                         <div class="lower-content">
-                            <h3><a href="">IOT</a></h3>
+                            <h3 style="text-align: center;"><a href="iot.php">IOT <br> Internet of Things</a></h3>
                             <div class="text"></div>
-                            <a href="" class="read-more">Savoir plus</a>
+                            <a href="iot.php" class="read-more">Savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -245,12 +300,12 @@
                 <div class="services-block-two">
                 	<div class="inner-box">
                     	<div class="icon-box">
-                        	<span class="icon flaticon-graphic-1"></span>
+                        	<span class="icon flaticon-vector"></span>
                         </div>
-                        <h3><a href="">Développement<br>sur Mesure Logiciels</a></h3>
+                        <h3><a href="logiciel.php">Développement<br>sur Mesure Logiciels</a></h3>
                         <div class="text">Conception et Développement<br>
                     de logiciel sur mesure</div>
-                        <a href="" class="read-more">VOIR PLUS</a>
+                        <a href="logiciel.php" class="read-more">VOIR PLUS</a>
                     </div>
                 </div>
                 
@@ -258,11 +313,11 @@
                 <div class="services-block-two">
                 	<div class="inner-box">
                     	<div class="icon-box">
-                        	<span class="icon flaticon-piggy-bank-1"></span>
+                        	<span class="icon-box flaticon-user"></span>
                         </div>
-                        <h3><a href="">Développement d'Applications Mobiles</a></h3>
+                        <h3><a href="mobile.php">Développement Mobiles</a></h3>
                         <div class="text">Développement d'application<br>mobile, hybride et native</div>
-                        <a href="" class="read-more">VOIR PLUS</a>
+                        <a href="mobile.php" class="read-more">VOIR PLUS</a>
                     </div>
                 </div>
                 
@@ -270,11 +325,11 @@
                 <div class="services-block-two">
                 	<div class="inner-box">
                     	<div class="icon-box">
-                        	<span class="icon flaticon-money-bag-1"></span>
+                        	<span class="icon-box flaticon-computer"></span>
                         </div>
-                        <h3><a href="">Développement d'Applications Web</a></h3>
+                        <h3><a href="web.php">Développement d'Applications Web</a></h3>
                         <div class="text">Conception et Développement de site ou d'applications Web</div>
-                        <a href="" class="read-more">VOIR PLUS</a>
+                        <a href="web.php" class="read-more">VOIR PLUS</a>
                     </div>
                 </div>
                 
@@ -282,11 +337,11 @@
                 <div class="services-block-two">
                 	<div class="inner-box">
                     	<div class="icon-box">
-                        	<span class="icon flaticon-computer"></span>
+                        	<span class="icon-box flaticon-analytics"></span>
                         </div>
-                        <h3><a href="audit-assurance.html">BI</a></h3>
-                        <div class="text">Business Intelligence</div>
-                        <a href="" class="read-more">VOIR PLUS</a>
+                        <h3><a href="bi.php">BI <br> Business Intelligence</a></h3>
+                        <div class="text">Elaboration des moyens,<br> des outils et méthodes</div>
+                        <a href="bi.php" class="read-more">VOIR PLUS</a>
                     </div>
                 </div>
                 
@@ -294,11 +349,11 @@
                 <div class="services-block-two">
                 	<div class="inner-box">
                     	<div class="icon-box">
-                        	<span class="icon flaticon-graphic-1"></span>
+                        	<span class="icon-box flaticon-graphic-1"></span>
                         </div>
-                        <h3><a href="">IOT</a></h3>
-                        <div class="text">Internet des Objets connectés .</div>
-                        <a href="" class="read-more">VOIR PLUS</a>
+                        <h3><a href="iot.php">IOT <br> Internet of Things</a></h3>
+                        <div class="text">Développement des Objets<br> avec IOT .</div>
+                        <a href="iot.php" class="read-more">VOIR PLUS</a>
                     </div>
                 </div>
                 

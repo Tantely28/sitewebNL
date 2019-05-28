@@ -25,7 +25,7 @@
     <div class="preloader"></div>
  	
     <!-- Main Header-->
-     <?php
+    <?php
         include('header.php');
     ?>
     <!--End Main Header -->
@@ -35,7 +35,7 @@
     	<div class="auto-container">
         	<h1></h1>
             <ul class="page-breadcrumb">
-            	<li><a href="index.php">Accueil</a></li>
+            	<li style="font-weight: bold; font-size: 20px; text-shadow: 1px 2px 5px #000000 "><a href="index.php">Accueil</a></li>
                 <li>Contact</li>
             </ul>
         </div>
@@ -53,27 +53,27 @@
             	<div class="form-column col-md-6 col-sm-12 col-xs-12">
                 	
                     <!--Contact Form-->
-                    <div class="contact-form">
+                    <div class="contact-form" >
                         <form method="post" action="sendemail.php" id="contact-form">
                             <!--Form Group-->
-                            <div class="form-group">
-                                <input type="text" id="nom" name="nom" value="" placeholder="Votre nom.*" required>
+                            <div class="form-group" >
+                                <input style="font-weight: normal" type="text" name="nom" value="" placeholder="Votre nom.*" required>
                             </div>
                         	<!--Form Group-->
                             <div class="form-group">
-                                <input type="email" id="email" name="email" value="" placeholder="Votre adresse email.*" required>
+                                <input style="font-weight: normal" type="email" name="email" value="" placeholder="Votre adresse email.*" required>
                             </div>
                             <!--Form Group-->
                             <div class="form-group">
-                                <input type="text" id="titre" name="Titre" value="" placeholder="Titre*" required>
+                                <input style="font-weight: normal" type="text" name="Titre" value="" placeholder="Titre*" required>
                             </div>
                             <!--Form Group-->
                             <div class="form-group">
-                                <textarea id="message" name="message" placeholder="Votre message.*" ></textarea>
+                                <textarea style="font-weight: normal" name="message" placeholder="Votre message.*" ></textarea>
                             </div>
                             <!--Form Group-->
                             <div class="form-group">
-                                <button onclick="addVisitor()" type="submit" class="theme-btn btn-style-two">Envoyer Message</button>
+                                <button type="submit" class="theme-btn btn-style-two">Envoyer Message</button>
                             </div>
                         </form>
                     </div>
@@ -135,26 +135,6 @@
 <script src="js/appear.js"></script>
 <script src="js/validate.js"></script>
 <script src="js/script.js"></script>
-<script>
-    function addVisitor()
-    {
-        var nom=$("#nom").val();
-        var email=$("#email").val();
-        var titre=$("#titre").val();
-        var message=$("#messae").val();
-
-        $.ajax({
-            url:"http://127.0.0.1:8000/api/create/visitor",
-            type: "post",
-            data:{
-                nom:nom,
-                email:email,
-                titre:titre,
-                message:message
-            }
-        })
-    }
-</script>
 <!--Google Map APi Key-->
 <script src="http://maps.google.com/maps/api/js?key=AIzaSyBKS14AnP3HCIVlUpPKtGp7CbYuMtcXE2o"></script>
 <script src="js/map-script.js"></script>

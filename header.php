@@ -43,7 +43,7 @@
         
         <!-- Main Box -->
     	<div class="main-box">
-        	<div class="auto-container">
+        	<div class="container-fluid">
             	<div class="outer-container clearfix">
                     <!--Logo Box-->
                     <div class="logo-box">
@@ -71,11 +71,11 @@
                                     <li class="dropdown"><a href="#">Services</a>
                                     	<ul>
                                             <li><a href="service.php">tous les Services</a></li>
-                                            <li><a href="">Logiciel sur mesure</a></li>
-                                            <li><a href="">Applications Mobiles</a></li>
-                                            <li><a href="">Applications Web</a></li>
-                                            <li><a href="">BI</a></li>
-                                            <li><a href="">IOT</a></li>
+                                            <li><a href="logiciel.php">Logiciel sur mesure</a></li>
+                                            <li><a href="mobile.php">Applications Mobiles</a></li>
+                                            <li><a href="web.php">Applications Web</a></li>
+                                            <li><a href="bi.php">BI</a></li>
+                                            <li><a href="iot.php">IOT</a></li>
                                         </ul>
                                     </li>
                                     <!--<li class="dropdown"><a href="index.php">Projets</a> </li>-->

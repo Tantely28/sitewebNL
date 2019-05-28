@@ -12,7 +12,7 @@
                             <div class="footer-column col-md-7 col-sm-6 col-xs-12">
                                 <div class="footer-widget logo-widget">
 									<div class="logo">
-                                    	<a href="index.html"><img src="images/logo.png" alt="" /></a>
+                                    	<a href="index.php"><img src="images/logo.png" alt="" /></a>
                                     </div>
                                     <div class="number">+261 34 58 880 22</div>
                                     <div class="text">contact@nl-technology.org <br> Anjanahary II 137 101 Antananarivo-Madagascar</div>
@@ -45,11 +45,11 @@
                                 	<h2>Services</h2>
                                     <div class="widget-content">
 										<ul class="list">
-                                            <li><a href="">Logiciel sur mesure</a></li>
-                                            <li><a href="">Applications Mobiles</a></li>
-                                            <li><a href="">Applications Web</a></li>
-                                            <li><a href="">BI</a></li>
-                                            <li><a href="">IOT</a></li>
+                                            <li><a href="logiciel.php">Logiciel sur mesure</a></li>
+                                            <li><a href="mobile.php">Applications Mobiles</a></li>
+                                            <li><a href="web.php">Applications Web</a></li>
+                                            <li><a href="bi.php">BI</a></li>
+                                            <li><a href="iot.php">IOT</a></li>
                                         </ul>
                                     </div>
                                 </div>

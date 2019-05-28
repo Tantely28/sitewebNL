@@ -6388,3 +6388,28 @@ img{
 	margin-bottom:30px;
 	font-family: 'Lato', sans-serif;
 }
+
+.logobi{
+height: 250px;
+width: 500px;
+}
+.logoko{
+height: 250px;
+width: 300px;
+}
+
+.corpmob{
+height:200px;
+width:500px;
+}
+.corpbi{
+height:100px;
+
+}
+.typea{
+	height:80px;
+}
+.centre1{
+height:500px;
+overflow-y:auto;
+}

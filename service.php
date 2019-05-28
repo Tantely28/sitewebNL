@@ -31,11 +31,11 @@
     <!--End Main Header -->
     
     <!--Page Title-->
-    <section class="page-title" style="background-image:url(images/service/02.jpg)">
+    <section class="page-title" style="background-image:url(images/service/SERVICE.jpg)">
     	<div class="auto-container">
         	<h1></h1>
             <ul class="page-breadcrumb">
-            	<li><a href="index.html">Accueil</a></li>
+            	<li style="font-weight: bold; font-size: 20px; text-shadow: 1px 2px 5px #000000 "><a href="index.php">Accueil</a></li>
                 <li>Services</li>
             </ul>
         </div>
@@ -52,48 +52,45 @@
                 <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box hvr-float-shadow">
                         <div class="icon-box">
-                            <span class="icon flaticon-graphic-1"></span>
+                            <span class="icon flaticon-vector"></span>
                         </div>
-                        <h3><a href="">Logiciels</a></h3>
+                        <h3><a href="logiciel.php">Logiciels</a></h3>
                         <div class="text">Conception et Développement<br>
                     de logiciel sur mesure</div>
-                        <a href="" class="read-more">VOIR PLUS</a>
+                        <a href="logiciel.php" class="read-more">VOIR PLUS</a>
                     </div>
                 </div>
 
                 <!--Services Block Two-->
                 <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
-                        <div class="icon-box flaticon-graphic-1">
-                            <span class="icon flaticon-piggy-bank-1"></span>
+                        <div class="icon-box flaticon-user">
                         </div>
-                        <h3><a href="">Applications Mobiles</a></h3>
+                        <h3><a href="mobile.php">Applications Mobiles</a></h3>
                         <div class="text">Développement d'applications<br>mobiles,hybrides ou natives</div>
-                        <a href="" class="read-more">VOIR PLUS</a>
+                        <a href="mobile.php" class="read-more">VOIR PLUS</a>
                     </div>
                 </div>
                 
                 <!--Services Block Two-->
                 <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
-                        <div class="icon-box flaticon-graphic-1">
-                            <span class="icon flaticon-money-bag-1"></span>
+                        <div class="icon-box flaticon-computer">
                         </div>
-                        <h3><a href="">Applications Web</a></h3>
+                        <h3><a href="web.php">Applications Web</a></h3>
                         <div class="text">Conception et Développement de site ou d'applications Web</div>
-                        <a href="" class="read-more">VOIR PLUS</a>
+                        <a href="web.php" class="read-more">VOIR PLUS</a>
                     </div>
                 </div>
                 
                 <!--Services Block Two-->
                 <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
-                        <div class="icon-box flaticon-graphic-1">
-                            <span class="icon flaticon-computer"></span>
+                        <div class="icon-box flaticon-analytics">
                         </div>
-                        <h3><a href="">BI</a></h3>
+                        <h3><a href="bi.php">BI</a></h3>
                         <div class="text">Business Intelligence</div>
-                        <a href="" class="read-more">VOIR PLUS</a>
+                        <a href="bi.php" class="read-more">VOIR PLUS</a>
                     </div>
                 </div>
                 
@@ -101,11 +98,23 @@
                 <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
                         <div class="icon-box flaticon-graphic-1">
-                            <span class="icon flaticon-graphic-1"></span>
+
                         </div>
-                        <h3><a href="">IOT</a></h3>
+                        <h3><a href="iot.php">IOT</a></h3>
                         <div class="text">Internet des Objets connectés .</div>
-                        <a href="" class="read-more">VOIR PLUS</a>
+                        <a href="iot.php" class="read-more">VOIR PLUS</a>
+                    </div>
+                </div>
+
+                <!--Services Block Two-->
+                <div class="services-block-two col-md-4 col-sm-6 col-xs-12" ">
+                    <div class="inner-box">
+                        <div class="icon-box flaticon-technology-1">
+
+                        </div>
+                        <h3><a href="iot.php">Contact</a></h3>
+                        <div class="text">N'hésite pas à nous contacter</div>
+                        <a href="iot.php" class="read-more">CONTACT</a>
                     </div>
                 </div>
                 
