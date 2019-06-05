@@ -103,7 +103,7 @@
                             <li>
                                 <div class="content">
                                     <img src="images/service/bi/2.png" />
-                                    <h3 style="color: #e00f78; text-shadow: 3px 2px 5px #FFFFFF;">consolide vos tache</h3>
+                                    <h3 style="color: #e00f78; text-shadow: 3px 2px 5px #FFFFFF;">consolide vos tâches</h3>
                                     <p>Bi rend plus stable l'organisation de votre entreprise</p>
                                 </div>
                             </li>
