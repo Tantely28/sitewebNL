@@ -31,6 +31,16 @@ class Recrutment
      */
     private $mission;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $fichier;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $autre;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -68,6 +78,30 @@ class Recrutment
     public function setMission(string $mission): self
     {
         $this->mission = $mission;
+
+        return $this;
+    }
+
+    public function getFichier()
+    {
+        return $this->fichier;
+    }
+
+    public function setFichier($fichier): self
+    {
+        $this->fichier = $fichier;
+
+        return $this;
+    }
+
+    public function getAutre(): ?string
+    {
+        return $this->autre;
+    }
+
+    public function setAutre(string $autre): self
+    {
+        $this->autre = $autre;
 
         return $this;
     }

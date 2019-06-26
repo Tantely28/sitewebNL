@@ -19,6 +19,54 @@
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
 <style>
+    .light div {
+        position: relative;
+    }
+    .light div::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        background: rgba(255,255,255,.2);
+        border-radius: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+    .light div:hover::before {
+        -webkit-animation: circle .75s;
+        animation: circle .75s;
+    }
+    @-webkit-keyframes circle {
+        0% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 1;
+        }
+        100% {
+            width: 200%;
+            height: 200%;
+            opacity: 0;
+        }
+    }
+    @keyframes circle {
+        0% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 1;
+        }
+        100% {
+            width: 200%;
+            height: 200%;
+            opacity: 0;
+        }
+    }
 </style>
 <body>
 
@@ -129,7 +177,10 @@
                     <div  data-aos="fade-right"
                           data-aos-offset="300"
                           data-aos-easing="ease-in-sine" class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
-                        <img src="images/service/log/8.png">
+                          <div class="light">
+                            <div><img src="images/service/log/8.png"></div>
+                            </div>   
+                        
                     </div>
                     <div  class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
                     <h2 data-aos="flip-right"
@@ -139,7 +190,7 @@
                     <p data-aos="fade-down"
                        data-aos-easing="linear"
                        data-aos-duration="1000" style="text-align: justify; margin-top: 10px;color: black">
-                        C'est un logiciel ergonomique et evolutif et qui se développe avec votre activité.
+                        C'est un logiciel ergonomique et évolutif et qui se développe avec votre activité.
                         Donc il rend simple ce qui est compliqué.<br> Des fonctionnalités adaptées pour votre métier avec une
                         interface moins complexe favorisant ainsi gain de temps et de productivité
                     </p>
@@ -172,9 +223,9 @@
                 <p data-aos="fade-right"
                    data-aos-offset="300"
                    data-aos-easing="ease-in-sine" style="color: black">
-                    - Gagnez du temps e en productivité <br>
-                    - Réduisez vos dépense <br>
-                    - Vos taches serons automatiser <br>
+                    - Gagnez du temps en productivité <br>
+                    - Réduisez vos dépenses <br>
+                    - Vos taches seront automatisées <br>
                     - Votre logiciel évoluera avec votre entreprise <br>
                     - Vous pouvez envisager de monétiser ou revendre cette solution logicielle<br>
                     - Vous devenez propriétaire de votre logiciel pour disposer d’un avantage concurrentiel.
@@ -186,7 +237,9 @@
             <div data-aos="flip-left"
                  data-aos-easing="ease-out-cubic"
                  data-aos-duration="2000" class="col-md-6"">
-            <img src="images/service/log/9.png">
+            <div class="light">
+                            <div><img src="images/service/log/9.png"></div>
+                            </div>
         </div>
 </div>
 </div>
@@ -198,20 +251,20 @@
 </section>
 <!--End Services Section-->
 <!--Call To Action Section-->
-<section class="call-to-action-section" style="background-image:url(images/background/1.jpg)">
-    <div class="auto-container">
-        <h2> Nous sommes passionnés par notre travail <span> une service à moindre coût </span></h2>
-        <div class="number-box clearfix">
-            <div class="pull-left">
-                <div class="number">+261 34 58 880 22</div>
-            </div>
-            <div class="pull-right">
-                <a href="contact.php" class="theme-btn btn-style-three">Contact</a>
+    <section class="call-to-action-section" style="background-image:url(images/background/1.jpg)">
+        <div class="auto-container">
+            <h2 data-aos="fade-up-right"> Nous sommes passionnés par notre travail <span  data-aos="fade-up-left" > une service à moindre coût </span></h2>
+            <div class="number-box clearfix">
+                <div class="pull-left">
+                    <div data-aos="fade-down-right" class="number">+261 34 58 880 22</div>
+                </div>
+                <div class="pull-right">
+                    <a href="contact.php" class="theme-btn btn-style-three" data-aos="fade-down-left" >Contact</a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<!--End Call To Action Section-->
+    </section>
+    <!--End Call To Action Section-->
 <!--Main Footer-->
 <?php
 include('footer.php');

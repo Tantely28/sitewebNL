@@ -45,6 +45,12 @@
     <!--Services Section-->
     <section class="services-section">
     	<div class="auto-container">
+            <div class="sec-title-two">
+                <h2>Service</h2>
+                <div class="text">Solution digitale personalisée pour votre entreprise.
+                    Découvrez nos différents types de services digitaux et n'hésité pas
+                    à demander un devis pour la réalisation de votre projet.</div>
+            </div>
         	
             <div class="row clearfix">
             	
@@ -63,7 +69,7 @@
 
                 <!--Services Block Two-->
                 <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
-                    <div class="inner-box">
+                    <div class="inner-box hvr-float-shadow">
                         <div class="icon-box flaticon-user">
                         </div>
                         <h3><a href="mobile.php">Applications Mobiles</a></h3>
@@ -74,7 +80,7 @@
                 
                 <!--Services Block Two-->
                 <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
-                    <div class="inner-box">
+                    <div class="inner-box hvr-float-shadow">
                         <div class="icon-box flaticon-computer">
                         </div>
                         <h3><a href="web.php">Applications Web</a></h3>
@@ -85,7 +91,7 @@
                 
                 <!--Services Block Two-->
                 <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
-                    <div class="inner-box">
+                    <div class="inner-box hvr-float-shadow">
                         <div class="icon-box flaticon-analytics">
                         </div>
                         <h3><a href="bi.php">BI</a></h3>
@@ -96,7 +102,7 @@
                 
                 <!--Services Block Two-->
                 <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
-                    <div class="inner-box">
+                    <div class="inner-box hvr-float-shadow">
                         <div class="icon-box flaticon-graphic-1">
 
                         </div>
@@ -108,7 +114,7 @@
 
                 <!--Services Block Two-->
                 <div class="services-block-two col-md-4 col-sm-6 col-xs-12" ">
-                    <div class="inner-box">
+                    <div class="inner-box hvr-float-shadow">
                         <div class="icon-box flaticon-technology-1">
 
                         </div>

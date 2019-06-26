@@ -97,13 +97,13 @@
                                 <div class="content">
                                     <img src="images/service/bi/1.png" />
                                     <h3 style="color:#fbc72e ; text-shadow: 3px 2px 5px #FFFFFF;">Collecte des données</h3>
-                                    <p>collecte des donnée pour mieux gérer l'entreprise</p>
+                                    <p>collecte des données pour mieux gérer l'entreprise</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="content">
                                     <img src="images/service/bi/2.png" />
-                                    <h3 style="color: #e00f78; text-shadow: 3px 2px 5px #FFFFFF;">consolide vos tâches</h3>
+                                    <h3 style="color: #e00f78; text-shadow: 3px 2px 5px #FFFFFF;">consolide vos taches</h3>
                                     <p>Bi rend plus stable l'organisation de votre entreprise</p>
                                 </div>
                             </li>
@@ -111,7 +111,7 @@
                                 <div class="content">
                                     <img src="images/service/bi/3.png" />
                                     <h3 style="color: #272b69; text-shadow: 3px 2px 5px #FFFFFF;">restitue tous les travaux</h3>
-                                    <p>BI reconstitue avec une manière rapide, souple et pertinante les travaux dans l'entreprise </p>
+                                    <p>BI reconstitue avec une manière rapide, souple et pertinente les travaux dans l'entreprise </p>
                                 </div>
                             </li>
                         </ul>
@@ -140,19 +140,14 @@
                     <p data-aos="fade-down"
                        data-aos-easing="linear"
                        data-aos-duration="1000" style="text-align: justify; margin-top: 10px;color: black">
-                        Le Business Intelligence (BI) n’est pas une nouvelle technologie. Il s’agit plutôt d’une solution
-                        complète d’analyse des données pour les entreprises, qui comprend le traitement analytique en ligne,
-                        l’exploration de données,de processus, la gestion de la performance, l’analyse comparative,prédictive
+                        Le Business Intelligence (BI) n’est pas une nouvelle technologie. Il s’agit plutôt d’une solution complète d’analyse des données pour les entreprises, qui comprend le traitement analytique en ligne, l’exploration de données, de processus, la gestion de la performance, l’analyse comparative, prédictive
                         et le reporting le plus important.
                     </p>
                     <p data-aos="fade-down"
                        data-aos-easing="linear"
                        data-aos-duration="1000" style="color: black; text-align: justify">
                         Les petites entreprises comme les grandes entreprises font face aux mêmes défis: comment obtenir
-                        de meilleures informations à partir des données volumineuses, améliorer l’expérience client et optimiser
-                        la productivité des employés, mais avec moins de ressources et un budget plus serré. Par conséquent,
-                        un outil d’aide à la décision automatisé et facile à utiliser est d’une grande importance pour
-                        les entreprises afin de donner un sens aux grandes données complexes.
+                        de meilleures informations à partir des données volumineuses, améliorer l’expérience client et optimiser la productivité des employés et un budget plus serré. Par conséquent, un outil d’aide à la décision automatisé et facile à utiliser est d’une grande importance pour les entreprises afin de donner un sens aux grandes données complexes.
                     </p>
                     <div data-aos="fade-left"
                          style="text-align: center; margin-top: 20px">
@@ -167,23 +162,21 @@
                 <h2  data-aos="zoom-in"
                      data-aos-easing="linear"
                      data-aos-duration="700" style="font-size: 20px; text-align: center; color: #FFFFFF; border-left:
-                        6px solid #FFFFFF;background-color: #d2b871;font-weight: bold">CARACTEISTIQUE DE BUSINESS INTELIGENCE</h2>
-                <p data-aos="fade-down"
-                   data-aos-easing="linear"
-                   data-aos-duration="800" style="text-align: justify; margin-top: 10px; color: black">
-                    Analyse ad hoc;<br>
-                    Requête ad hoc;<br>
-                    Rapports ad hoc; <br>
-                    Benchmarking Budgétisation et prévision; <br>
-                    Tableau de bord;<br>
-                    L’analyse des données;  <br>
-                    Visualisation de données; <br>
-                    Indicateurs de performance clés OLAP; <br>
-                    Indicateurs de performance; <br>
-                    Analyses prédictives; <br>
-                    Analyse de rentabilité; <br>
-                    Planification stratégique; <br>
-                    Indicateurs de tendance.
+                        6px solid #FFFFFF;background-color: #d2b871;font-weight: bold">CARACTERISTIQUE DU BUSINESS INTELIGENCE</h2>
+                <p  style="text-align: justify; margin-top: 10px; color:#000000;">
+                    <div data-aos="fade-right">Analyse ad hoc</div>
+                    <div data-aos="fade-left">Requête ad hoc</div>
+                    <div data-aos="fade-right">Rapports ad hoc</div> 
+                    <div data-aos="fade-left">Benchmarking Budgétisation et prévision</div> 
+                    <div data-aos="fade-right">Tableau de bord</div>
+                    <div data-aos="fade-left">L’analyse des données </div> 
+                    <div data-aos="fade-right">Visualisation de données</div> 
+                    <div data-aos="fade-left">Indicateurs de performance clés OLAP</div> 
+                    <div data-aos="fade-right">Indicateurs de performance</div> 
+                    <div data-aos="fade-left">Analyses prédictives</div> 
+                    <div data-aos="fade-right">Analyse de rentabilité </div>
+                    <div data-aos="fade-left">Planification stratégique</div> 
+                    <div data-aos="fade-right">Indicateurs de tendance</div>
 
                 </p>
                 <div data-aos="zoom-in" style="text-align: center; margin-top: 20px">
@@ -192,8 +185,11 @@
             </div>
             <div data-aos="flip-left"
                  data-aos-easing="ease-out-cubic"
-                 data-aos-duration="2000" class="col-md-6"">
-            <img src="images/service/bi/bi2.png">
+                 data-aos-duration="2000" class="col-md-6">
+            <div class="light">
+                <div><img src="images/service/bi/bi2.png"></div>
+            </div>     
+            
         </div>
 </div>
 </div>
@@ -202,7 +198,9 @@
         <div data-aos="fade-right"
              data-aos-offset="300"
              data-aos-easing="ease-in-sine" class="col-md-6"">
-        <img src="images/service/bi/BI3.png">
+             <div class="light">
+                <div><img src="images/service/bi/BI3.png"></div>
+            </div>  
     </div>
     <div  class="col-md-6"">
     <h2 data-aos="zoom-in-left"
@@ -229,7 +227,21 @@
 </div>
 </section>
 <!--End Services Section-->
-
+<!--Call To Action Section-->
+    <section class="call-to-action-section" style="background-image:url(images/background/1.jpg)">
+        <div class="auto-container">
+            <h2 data-aos="fade-up-right"> Nous sommes passionnés par notre travail <span  data-aos="fade-up-left" > une service à moindre coût </span></h2>
+            <div class="number-box clearfix">
+                <div class="pull-left">
+                    <div data-aos="fade-down-right" class="number">+261 34 58 880 22</div>
+                </div>
+                <div class="pull-right">
+                    <a href="contact.php" class="theme-btn btn-style-three" data-aos="fade-down-left" >Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Call To Action Section-->
 <!--Main Footer-->
 <?php
 include('footer.php');

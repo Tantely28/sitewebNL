@@ -22,9 +22,9 @@ class Visitor
     private $name;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=255)
      */
-    private $telephone;
+    private $titre;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -53,14 +53,14 @@ class Visitor
         return $this;
     }
 
-    public function getTelephone(): ?int
+    public function getTitre(): ?string
     {
-        return $this->telephone;
+        return $this->titre;
     }
 
-    public function setTelephone(int $telephone): self
+    public function setTitre(string $titre): self
     {
-        $this->telephone = $telephone;
+        $this->titre = $titre;
 
         return $this;
     }

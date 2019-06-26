@@ -23,7 +23,7 @@
 <link href="plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
 <link href="css/style.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
 <!-- Responsive -->
@@ -79,7 +79,33 @@
 <script src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script src="plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
 <script src="js/main-slider-script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script type="text/javascript">
+    $('.ml16').each(function(){
+        $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+    });
 
+    anime.timeline({loop: true})
+        .add({
+            targets: '.ml16 .letter',
+            translateY: [-100,0],
+            easing: "easeOutExpo",
+            duration: 1400,
+            delay: function(el, i) {
+                return 30 * i;
+            }
+        }).add({
+        targets: '.ml16',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+    });
+</script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.fancybox.pack.js"></script>
 <script src="js/jquery.fancybox-media.js"></script>

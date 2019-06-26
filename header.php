@@ -8,8 +8,8 @@
                     <!--Top Left-->
                     <div class="top-left">
                     	<ul class="links clearfix">
-                        	<li><a href="#"><span class="icon flaticon-technology-1"></span>+261 34 58 880 22</a></li>
-                            <li><a href="#"><span class="icon flaticon-message"></span>contact@nl-technology.org</a></li>
+                        	<li><a href="contact.php"><span class="icon flaticon-technology-1"></span>+261 34 58 880 22</a></li>
+                            <li><a href="https://www.google.com/gmail/"><span class="icon flaticon-message"></span>nltechnology19@gmail.com</a></li>
                         </ul>
                     </div>
                     
@@ -18,10 +18,8 @@
                     	<!--social-icon-->
                         <div class="social-icon">
                         	<ul class="clearfix">
-                            	<li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                            	<li><a href="https://www.facebook.com/NL-Technologie-Dev-2316701511938060/"><span class="fa fa-facebook"></span></a></li>
+                                <li><a href="https://www.google.com/gmail/"><span class="fa fa-envelope"></span></a></li>
                             </ul>
                         </div>
                         <!--Language-->

@@ -137,6 +137,7 @@ p,.text{
 	min-width:300px;
 }
 
+
 .grey-bg{
 	background-color:#f8f8f8;
 }
@@ -1699,8 +1700,7 @@ img{
 
 .sec-title{
 	position:relative;
-	margin-bottom:52px;
-	padding-bottom:28px;
+	
 }
 
 .sec-title .title{
@@ -6412,4 +6412,23 @@ height:100px;
 .centre1{
 height:500px;
 overflow-y:auto;
+}
+.ml16 {
+	font-style:italic;
+	color:#d2b871;
+	font-family: 'Playfair Display', serif;
+	padding: 40px 0;
+	font-weight: 800;
+	font-size: 22px;
+	font-style:italic;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	overflow: hidden;
+	text-shadow: 1px 1px #000000;
+	text-align: center;
+}
+
+.ml16 .letter {
+	display: inline-block;
+	line-height: 1em;
 }

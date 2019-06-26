@@ -1,18 +1,18 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello RecrutmentController!{% endblock %}
+{% block title %}Equipe{% endblock %}
 
 {% block body %}
     <div class="container mt-4">
-        <h2>Les membres de l'equipe</h2>
+        <h2>LES MEMBRE DE NOTRE EQUIPE</h2><hr>
         <a href="{{ path('create_equipe') }}" class="btn btn-outline-primary">Ajouter</a><br>
         <table class="table table-striped">
 
             <thead>
-            <tr><th>Identifiant</th><th>Image</th><th>Nom</th><th>Poste</th><th>Action</th></tr>
+            <tr><th>PHOTO</th><th>NOM</th><th>POSTE</th><th>ACTION</th></tr>
             </thead>
             {% for e in equipe %}
-                <tbody><tr><td>{{ e.id }}</td><td><image src="{{ asset('uploads/' ~ e.image) }}" width="50px"/></td><td>{{ e.nom }}</td><td>{{ e.poste }}</td>
+                <tbody><tr><td><img src="{{ asset('uploads/' ~ e.image) }}" width="50px"/></td><td>{{ e.nom }}</td><td>{{ e.poste }}</td>
                     <td>
                         <a href="{{ path('show_equipe',{id:e.id}) }}" class="btn btn-primary">Voir</a>
                         <a href="{{ path('edit_equipe',{id:e.id}) }}" class="btn btn-secondary">Edit</a>
@@ -26,7 +26,7 @@
     <script>
         function DelComment(id){
             if(confirm("Voulez vous vraiment supprimer cette Enregistrement ?")){
-                window.location='/delete/equipe/'+id
+                window.location='/back/public/index.php/delete/equipe/'+id
             }
             else{
                 alert("L'enregistrement n'a pas été supprimé.")

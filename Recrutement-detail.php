@@ -19,7 +19,7 @@
 
 <body>
 
-<div class="page-wrapper">
+<div class="page-wrapper" align="center" >
  	
     <!-- Preloader -->
     <div class="preloader"></div>
@@ -30,91 +30,55 @@
     ?><!--End Main Header-->
     
     <!--Page Title-->
-    <section class="page-title" style="background-image:url(images/background/recrutement.png)">
+    <section class="page-title"  style="background-image:url(images/background/recrutement.png)">
     	<div class="auto-container">
         	<h1></h1>
             <ul class="page-breadcrumb">
-            	<li style="font-weight: bold; font-size: 20px; text-shadow: 1px 2px 5px #000000 "><a href="index.php">Accueil</a></li>
+                <li style="font-weight: bold; font-size: 20px; text-shadow: 1px 2px 5px #000000 "><a href="index.php">Accueil</a></li>
                 <li>Details de Recrutement </li>
             </ul>
-        </div>
+
+
+         </div>
+
+
     </section>
+    <hr>
+    <div class="container">
+
+        <div id="image" align="center">
+
+        </div>
+        <hr>
+
+        <div id="poste"  align="left">
+
+        </div>
+        <hr>
+
+        <div id="profil"  align="left">
+
+        </div>
+        <hr>
+
+        <div id="mission"  align="left">
+
+        </div>
+
+        <div id="autre"  align="left">
+
+        </div>
+        <br><br>
+
+
+    </div>
+
     <!--End Page Title-->
     
     <!--Gallery Single Section-->
-    <section class="gallery-single">
-    	<div class="auto-container">
-        	<div class="inner-container">
-            	<div class="upper-content">
-                	<div class="image">
-                    	<img src="images/recrutement/chef de projet.jpg" alt="" />
-                    </div>
-                    
-                </div>
-                <div class="lower-content">
-                
-                	<!--Upper Box-->
-                	<div class="upper-box">
-                    	<div class="sec-title-two">
-                        	<h2>Principales fonctions :</h2>
-                        </div>
-                        <div class="text">
-                        	<p>
-                            o Assurer la rédaction des expressions de besoins</br>
-                            o Assurer la rédaction et la validation des spécifications fonctionnelles et techniques</br>
-                            o Participer aux choix des solutions techniques et déploiement</br>
-                            o Assurer l’estimation des charges et suivre les plannings</br>
-                            o Assurer le suivi et reporting des projets</br>
-                            o Prendre en charge des lots de développement, en assurer la qualité</br>
-                            o Participer aux recettes et au déploiement final</br>
-                            o Participer au développement proprement dit du projet</br>
-                            o Assurer l’encadrement de l’équipe de développement</br>
-                            o Assurer la veille technologique de son domaine</br>
 
-                            L’environnement technique est le suivant : HTML / CSS, PHP / Javascript, SQL Serveur, My SQL, </br>Java, Frameworks Symfony, Android …</br></p>
-                        </div>
-                    </div>
-                    
-                    <!--Middle Box-->
-                    <div class="middle-box">
-                    	<div class="row clearfix">
-                        	<!--Content Column-->
-                        	<div class="content-column col-md-8 col-sm-12 col-xs-12">
-                            	<div class="sec-title-two">
-                                	<h2>Profil requis :</h2>
-                                </div>
-                                <div class="text">
-                                    <p>
-                                    o Diplômé(e) d’un Bac+5 en informatique</br>
-                                    o 2 ans d’expérience en gestion de projet informatique</br>
-                                    o Maîtrisé les concepts CRM</br>
-                                    o Maîtrisé la bonne utilisation des différentes méthodes de gestion de projet (Agile / Cycle en V).</br>
-                                    o Ayant une bonne connaissance des technologies de développement.</br></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--Lower Box-->
-                    <div class="lower-box">
-                    	<div class="sec-title-two">
-                        	<h2>Poste :</h2>
-                        </div>
-                        <div class="text">
-                        	<p>o Plein temps, CDI</br>
-                               o Basé à Antananarivo</br>
-                              Veuillez envoyer votre CV, LM + Prétention salariale à l’adresse email </br>
-                          recrutement@nl-technology.org</p>
-                        </div>
-                      
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
     <!--End Gallery Section-->
-    
+
     <!--Main Footer-->
     <?php
         include('footer.php');
@@ -136,5 +100,26 @@
 <script src="js/appear.js"></script>
 <script src="js/mixitup.js"></script>
 <script src="js/script.js"></script>
+
+<script>
+
+
+    var impt=new XMLHttpRequest();
+      impt.open('GET','/back/public/index.php/api/show/recrut/<?php echo $_GET['idRec']; ?>');
+      impt.onreadystatechange=function () {
+            if (this.readyState === 4 && this.status === 200) {
+
+            var arr=JSON.parse(impt.response);
+                document.getElementById('image').innerHTML='<img width="1150px" height="200px" src="/back/public/uploads/'+arr[0]['image'] +'" alt="post">'
+                document.getElementById('poste').innerHTML='<b> <h3><strong class="text-info">Poste :</strong> </h3>'+arr[0]['post']+'</b>'
+                document.getElementById('profil').innerHTML='<b> <h3><strong class="text-info">Profile Requis :</strong></h3>'+arr[0]['profile']+'</b>'
+                document.getElementById('mission').innerHTML='<b> <h3><strong class="text-info">Mission :</strong></h3>'+arr[0]['mission']+'  </b>'
+                document.getElementById('autre').innerHTML='<b> <h3><strong class="text-info">Autre :</strong></h3>'+arr[0]['autre']+'  </b>'
+
+
+        }
+    };
+      impt.send()
+</script>
 </body>
 </html>

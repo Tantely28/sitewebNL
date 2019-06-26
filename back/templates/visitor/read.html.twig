@@ -4,16 +4,16 @@
 
 {% block body %}
     <div class="container mt-4">
-        <h2><b>Les message des visiteurs</b></h2>
+        <h2><b>LES VISITEURS</b></h2>
         <table class="table table-striped">
             <hr>
             <thead>
-            <tr><th>Identifiant</th><th>Nom</th><th>Telephone</th><th>Email</th><th>Action</th></tr>
+            <tr><th>NOM</th><th>EMAIL</th><th>TITRE</th><th>Action</th></tr>
             </thead>
             {% for e in message %}
-                <tbody><tr><td>{{ e.id }}</td><td>{{ e.name }}</td><td>{{ e.telephone }}</td><td>{{ e.email }}</td>
+                <tbody><tr><td>{{ e.name }}</td><td>{{ e.email }}</td><td>{{ e.titre }}</td>
                     <td>
-                        <a href="{{ path('show_equipe',{id:e.id}) }}" class="btn btn-primary">Voir</a>
+                        <a href="{{ path('message_view',{id:e.id}) }}" class="btn btn-primary">Voir le message</a>
                         <a href="#" class="btn btn-danger" onclick="DelComment({{ e.id }})">Supprimer</a>
                     </td>
                 </tr></tbody>
@@ -24,7 +24,7 @@
     <script>
         function DelComment(id){
             if(confirm("Voulez vous vraiment supprimer cette Enregistrement ?")){
-                window.location='/delete/equipe/'+id
+                window.location='/back/public/index.php/delete/visiteur/'+id
             }
             else{
                 alert("L'enregistrement n'a pas été supprimé.")

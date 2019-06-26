@@ -19,6 +19,54 @@
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
 <style>
+    .light div {
+        position: relative;
+    }
+    .light div::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        background: rgba(255,255,255,.2);
+        border-radius: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+    .light div:hover::before {
+        -webkit-animation: circle .75s;
+        animation: circle .75s;
+    }
+    @-webkit-keyframes circle {
+        0% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 1;
+        }
+        100% {
+            width: 200%;
+            height: 200%;
+            opacity: 0;
+        }
+    }
+    @keyframes circle {
+        0% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 1;
+        }
+        100% {
+            width: 200%;
+            height: 200%;
+            opacity: 0;
+        }
+    }
 </style>
 <body>
 
@@ -85,7 +133,7 @@
                     </div>
                 </div>
                 <p data-aos="fade-right" style="text-align: center; color: white; margin-bottom: 70px;font-weight: bold">
-                    Des Objet connecté sont développé par les experts de la Team NL Technologie. Ils accompagnent tous les métiers de l'entreprise pour concevoir et déployer l'IOT.
+                    Des Objets connectés sont développés par les experts de la Team NL Technologie. Ils accompagnent tous les métiers de l'entreprise pour concevoir et déployer l'IOT.
                 </p>
             </div>
             <div class="row" style="background:#f8f8f8;padding: 70px 70px">
@@ -93,13 +141,16 @@
                     <div  data-aos="fade-right"
                           data-aos-offset="300"
                           data-aos-easing="ease-in-sine" class="col-md-6">
-                        <img src="images/service/iot/iot3.png">
+                          <div class="light">
+                            <div><img src="images/service/iot/iot3.png"></div>
+                            </div>  
+                        
                     </div>
                     <div  class="col-md-6"">
                     <h2 data-aos="flip-right"
                         data-aos-easing="linear"
                         data-aos-duration="700" style="font-size: 20px; text-align: center; color: #FFFFFF; border-left:
-                        6px solid #FFFFFF;background-color: #d2b871;font-weight: bold">IOT: Internet Of Thing ou Internnet des Objets</h2>
+                        6px solid #FFFFFF;background-color: #d2b871;font-weight: bold">IOT: Internet Of Things ou Internet des Objets</h2>
                     <p data-aos="fade-down"
                        data-aos-easing="linear"
                        data-aos-duration="1000" style="text-align: justify; margin-top: 10px;color: black">
@@ -111,7 +162,7 @@
                        data-aos-easing="linear"
                        data-aos-duration="1000" style="color: black">
                         - IOT s'adapte à vos besoin <br>
-                        - IOT s'adapte à vos enironnement
+                        - IOT s'adapte à votre environnement
                     </p>
                     <div data-aos="fade-left"
                          style="text-align: center; margin-top: 20px">
@@ -126,12 +177,12 @@
                 <h2  data-aos="zoom-in"
                      data-aos-easing="linear"
                      data-aos-duration="700" style="font-size: 20px; text-align: center; color: #FFFFFF; border-left:
-                        6px solid #FFFFFF;background-color: #d2b871;font-weight: bold">Fonctionaliter de l'IOT</h2>
+                        6px solid #FFFFFF;background-color: #d2b871;font-weight: bold">Fonctionnalités de l'IOT</h2>
                 <p data-aos="fade-down"
                    data-aos-easing="linear"
                    data-aos-duration="800" style="text-align: justify; margin-top: 10px; color: black">
                     L'IOT a pour particularité de ne pas fonctionné d'une manière autonome mais justement capable de
-                    communiqué et de transmettre des informations à d‘autre objet connecté.<br>
+                    communiqué et de transmettre des informations à d'autres objets connectés.<br>
                     Objet connecté est un objet intelligent c’est-à-dire communication de machine à machine sans avoir besoin d’un humain comme intermédiaire et
                     c’est là plus grand changement.
                     <br>
@@ -148,7 +199,9 @@
             <div data-aos="flip-left"
                  data-aos-easing="ease-out-cubic"
                  data-aos-duration="2000" class="col-md-6"">
-            <img src="images/service/iot/iot1.png">
+            <div class="light">
+                            <div><img src="images/service/iot/iot1.png"></div>
+                            </div> 
         </div>
     </div>
     </div>
@@ -157,7 +210,9 @@
             <div data-aos="fade-right"
                  data-aos-offset="300"
                  data-aos-easing="ease-in-sine" class="col-md-6"">
-            <img src="images/service/iot/iot2.png">
+            <div class="light">
+                            <div><img src="images/service/iot/iot2.png"></div>
+                            </div> 
         </div>
         <div  class="col-md-6"">
         <h2 data-aos="zoom-in-left"
@@ -193,7 +248,21 @@
     </div>
     </section>
 <!--End Services Section-->
-
+<!--Call To Action Section-->
+    <section class="call-to-action-section" style="background-image:url(images/background/1.jpg)">
+        <div class="auto-container">
+            <h2 data-aos="fade-up-right"> Nous sommes passionnés par notre travail <span  data-aos="fade-up-left" > une service à moindre coût </span></h2>
+            <div class="number-box clearfix">
+                <div class="pull-left">
+                    <div data-aos="fade-down-right" class="number">+261 34 58 880 22</div>
+                </div>
+                <div class="pull-right">
+                    <a href="contact.php" class="theme-btn btn-style-three" data-aos="fade-down-left" >Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Call To Action Section-->
 <!--Main Footer-->
 <?php
 include('footer.php');

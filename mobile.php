@@ -19,6 +19,55 @@
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
 <style>
+    .light div {
+        position: relative;
+    }
+    .light div::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        background: rgba(255,255,255,.2);
+        border-radius: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+    .light div:hover::before {
+        -webkit-animation: circle .75s;
+        animation: circle .75s;
+    }
+    @-webkit-keyframes circle {
+        0% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 1;
+        }
+        100% {
+            width: 200%;
+            height: 200%;
+            opacity: 0;
+        }
+    }
+    @keyframes circle {
+        0% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 1;
+        }
+        100% {
+            width: 200%;
+            height: 200%;
+            opacity: 0;
+        }
+    }
+
 </style>
 <body>
 
@@ -67,14 +116,14 @@
                                 <div class="content">
                                     <img src="images/service/mob/4.png" />
                                     <h3 style="color: #e5615f; text-shadow: 3px 2px 5px #FFFFFF;"> UN OUTIL DE FIDÉLISATION</h3>
-                                    <p>Il est donc beaucoup plus facile d’informer ces derniers, d’interagir, de rester
+                                    <p>Il est donc beaucoup plus facile d’informer vos clients, d’interagir, de rester
                                         à leur disposition et rendre possible l’envoi de notifications</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="content">
                                     <img src="images/service/mob/2.png" />
-                                    <h3 style="color: #002339; text-shadow: 3px 2px 5px #FFFFFF;">UNE GESTION DES RENDEZ-VOUS CLIENTS PLUS EFFICACE</h3>
+                                    <h3 style="color: #002339; text-shadow: 3px 2px 5px #FFFFFF;">UN OUTIL DE GESTION CLIENT OPTIMISEE</h3>
                                     <p>Il permet à l’entreprise de gérer ses rendez-vous clients à distance, et aux clients
                                         de prendre rendez-vous à partir de plusieurs supports : ordinateur, tablette,
                                         smartphone… Votre entreprise reste ainsi accessible partout, 24/7.</p>
@@ -97,7 +146,7 @@
                 <p data-aos="fade-right" style="text-align: center; color: white; margin-bottom: 70px;font-weight: bold">
                     Toutes les entreprises convoitent le site internet parfait, celui qui
                     fera augmenter leurs conversions et exploser leur popularité en ligne.<br>
-                    Nous vous rassurons avec un peu d’investissement, il est possible de
+                    Nous vous rassurons avec un bon d’investissement, il est possible de
                     concevoir un site web ou une application web à la hauteur de vos attentes !
                 </p>
 
@@ -107,7 +156,10 @@
                     <div  data-aos="fade-right"
                           data-aos-offset="300"
                           data-aos-easing="ease-in-sine" class="col-md-6">
-                        <img src="images/service/mob/11.png">
+                          <div class="light">
+                <div><img src="images/service/mob/11.png"></div>
+            </div> 
+                        
                     </div>
                     <div  class="col-md-6"">
                     <h2 data-aos="flip-right"
@@ -118,15 +170,14 @@
                        data-aos-easing="linear"
                        data-aos-duration="1000" style="text-align: justify; margin-top: 10px;color: black">
                         Les technologies de l'information et de la communication ont été la révolution la plus importante
-                        et innovante qui a marqué ces dernières décennies.En effet, cela est symbolisé par l’apparition
+                        et innovante qui a marqué ces dernières décennies. En effet, cela est symbolisé par l’apparition
                         des différents appareils de haute technologie tels que les Smartphones et les tablettes.
                     </p>
                     <p data-aos="fade-down"
                        data-aos-easing="linear"
                        data-aos-duration="1000" style="color: black; text-align: justify">
-                        Dans cette domaine il y a trois types de developpement mobile
-                        le mobile Native,hybbride et Web apps.Notre Entreprise vise plutôt le developpement mobile Native
-                        qui est le plus avantagueux que les autres
+                        Dans ce domaine il y a trois types de developpement mobile
+                        le mobile Native,hybride et Web apps.
                     </p>
                     <div data-aos="fade-left"
                          style="text-align: center; margin-top: 20px">
@@ -137,7 +188,7 @@
         </div>
         <div class="row" style="background: #5bc0de; padding: 80px 80px ; ">
             <div class="container">
-                <!--native--------------------------------------------------------------------->
+             
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 
                     <div class="card" style="width: 35rem;">
@@ -145,115 +196,113 @@
                              data-aos-offset="300"
                              data-aos-easing="ease-in-sine"
                              src="images/service/mob/6.png" class="card-img-top" alt="...">
-                        <div class="card-body" data-aos="fade-up"
-                             data-aos-anchor-placement="top-bottom" style="margin-top: 10px">
+                        <div class="card-body" data-aos="flip-left" style="margin-top: 10px">
 
                             <ul class="list-group">
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-
-                                    <span class="badge badge-primary badge-pill">1</span>
-                                    <p class="text-info"> Accès facile à toutes les smartphones.</p>
+                                    
+                                    <p class="text-info">
+                                        <span class="badge badge-primary badge-pill">1</span>
+                                         &nbsp;&nbsp; Accès facile pour tous les smartphones.
+                                     </p>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
 
-                                    <span class="badge badge-primary badge-pill">2</span>
+                                    
 
-                                    <p class="text-info"> Rapidité et fiabilité responsive et optimisée.</p>
+                                    <p class="text-info"> <span class="badge badge-primary badge-pill">2</span>&nbsp;&nbsp;Rapidité, fiabilité responsive, optimisée.</p>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
 
-                                    <span class="badge badge-primary badge-pill">3</span>
+                                    
 
-                                    <p class="text-info">Meilleure résolution,Performance et qualité.</p>
+                                    <p class="text-info"><span class="badge badge-primary badge-pill">3</span>&nbsp;&nbsp;Meilleure résolution, Performance et qualité.</p>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
 
-                                    <span class="badge badge-primary badge-pill">4</span>
+                                    
 
-                                    <p class="text-info">  Accès direct en hors connexion Internet</p>
+                                    <p class="text-info"><span class="badge badge-primary badge-pill">4</span>&nbsp;&nbsp;Accès direct en hors connexion Internet</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <!--hybride--------------------------------------------------------------------->
+                
 
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <div class="card" style="width: 35rem;">
-                        <img data-aos="fade-zoom-in"
-                             data-aos-easing="ease-in-back"
-                             data-aos-delay="300"
-                             data-aos-offset="0"
+                        <img data-aos="fade-down"
+                             data-aos-offset="300"
+                             data-aos-easing="ease-in-sine"
                              src="images/service/mob/8.png"src="..." class="card-img-top" alt="...">
-                        <div class="card-body" data-aos="fade-up"
-                             data-aos-anchor-placement="center-bottom" style="margin-top: 10px">
+                        <div class="card-body" data-aos="flip-up" style="margin-top: 10px">
 
                             <ul class="list-group">
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
 
-                                    <span class="badge badge-primary badge-pill">1</span>
+                                    
 
-                                    <p class="text-info">Temps de développement court et simple.</p>
+                                    <p class="text-info"><span class="badge badge-primary badge-pill">1</span>&nbsp;&nbsp;Temps de développement court et simple.</p>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
 
-                                    <span class="badge badge-primary badge-pill">2</span>
+                                   
 
-                                    <p class="text-info"> Simplicité du développement.</p>
+                                    <p class="text-info">  <span class="badge badge-primary badge-pill">2</span>&nbsp;&nbsp;Simplicité de développement.</p>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
 
-                                    <span class="badge badge-primary badge-pill">3</span>
+                                    
 
-                                    <p class="text-info">  Mise en place et publication plus rapide.</p>
+                                    <p class="text-info"><span class="badge badge-primary badge-pill">3</span>&nbsp;&nbsp;  Mise en place plus simple et publication plus rapide.</p>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
 
-                                    <span class="badge badge-primary badge-pill">4</span>
+                                    
 
-                                    <p class="text-info"> Focnctionnalioté simple.</p>
+                                    <p class="text-info"> <span class="badge badge-primary badge-pill">4</span>&nbsp;&nbsp;Fonctionnalité simple.</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <!--Web apps--------------------------------------------------------------------->
+               
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 
                     <div class="card " style="width: 35rem;">
-                        <img data-aos="fade-down"
-                             data-aos-easing="linear"
-                             data-aos-duration="500"
+                        <img data-aos="fade-left"
+                             data-aos-offset="300"
+                             data-aos-easing="ease-in-sine"
                              src="images/service/mob/7.png" class="card-img-top" alt="...">
-                        <div class="card-body" data-aos="fade-up"
-                             data-aos-anchor-placement="bottom-bottom" style="margin-top: 10px">
+                        <div class="card-body" data-aos="flip-right" style="margin-top: 10px">
 
 
                             <ul class="list-group">
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
 
-                                    <span class="badge badge-primary badge-pill">1</span>
+                                    
 
-                                    <p class="text-info">Moins chère.</p>
+                                    <p class="text-info"><span class="badge badge-primary badge-pill">1</span>&nbsp;&nbsp;Moins chère.</p>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
 
-                                    <span class="badge badge-primary badge-pill">2</span>
+                                    
 
-                                    <p class="text-info">Facile à Développer.</p>
+                                    <p class="text-info"><span class="badge badge-primary badge-pill">2</span>&nbsp;&nbsp;Facile à Développer.</p>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
 
-                                    <span class="badge badge-primary badge-pill">3</span>
+                                    
 
-                                    <p class="text-info"> Compatible environnement iOS, Android,etc.</p>
+                                    <p class="text-info"> <span class="badge badge-primary badge-pill">3</span>&nbsp;&nbsp;Compatible environnement iOS, Android,etc.</p>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
 
-                                    <span class="badge badge-primary badge-pill">4</span>
+                                    
 
-                                    <p class="text-info">  Animations attractives.</p>
+                                    <p class="text-info">  <span class="badge badge-primary badge-pill">4</span>&nbsp;&nbsp;Animations attractives.</p>
                                 </li>
                             </ul>
 
@@ -271,7 +320,21 @@
 </div>
 </section>
 <!--End Services Section-->
-
+<!--Call To Action Section-->
+    <section class="call-to-action-section" style="background-image:url(images/background/1.jpg)">
+        <div class="auto-container">
+            <h2 data-aos="fade-up-right"> Nous sommes passionnés par notre travail <span  data-aos="fade-up-left" > une service à moindre coût </span></h2>
+            <div class="number-box clearfix">
+                <div class="pull-left">
+                    <div data-aos="fade-down-right" class="number">+261 34 58 880 22</div>
+                </div>
+                <div class="pull-right">
+                    <a href="contact.php" class="theme-btn btn-style-three" data-aos="fade-down-left" >Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Call To Action Section-->
 <!--Main Footer-->
 <?php
 include('footer.php');

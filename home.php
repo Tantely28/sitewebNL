@@ -77,9 +77,8 @@
                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                     >
                     	<div class="text">
-                            NL Technologie en tant qu'entreprise de service numerique,nous vous offrons des conseils en
-                            technologie et en editions des logiciels.
-                            Nous offrons aux entreprises l’opportunité de les accompagner dans leur transformation numérique.
+                            NL Technologie en tant qu'entreprise de service numerique vous propose des conseils en technologie et en édition de logiciel.
+                            Nous avons comme mission d'accompagner les entreprises dans leur transformation digitale et numérique.
                         </div>
                     </div>
                     
@@ -155,7 +154,7 @@
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                     >
-                    	<h2>Bénéficiez d’une équipe passionnée</h2>
+                    	<h2>Bénéficiez de l'assistance d’une équipe passionnée</h2>
                     </div>
                     
                     <div class="tp-caption" 
@@ -176,8 +175,7 @@
                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                     >
                     	<div class="text">
-                            Nous mettons à votre disposition une équipe qui va vous accompagner dans
-                            l’identification de vos besoins.
+                            Vous ouvrez à votre disposition une équipe qui va vous accompgner dans l'identification et la satisfaction de vos besoins.
                         </div>
                     </div>
                     
@@ -211,26 +209,50 @@
     <!--End Main Slider-->
     
     <!--Welcome Section-->
-    <section class="welcome-section" style="background-image:url(images/resource/map-pattern-1.png)">
-    	<div class="auto-container">
-        	<!--Services Title-->
-            <div class="services-title">
-            	<div class="title" style="font-size: 40px; color: #d2b871; text-shadow: 1px 1px #000000;">Bienvenue dans notre entreprise</div>
-                <h2> NL Technologie a été créée afin de vous accompagner tout au long de votre <br>développement pour des projets de transformation digitale. <br>
-                Ainsi, nous mettons tout en œuvre afin que vous ayez la technologie de pointe<br> adaptée à vos besoins pour faciliter la réalisation de vos activités.
+    <section style="background: #FFFFFF;padding-bottom: 50px">
+        <div class="auto-container">
+            <!--Services Title-->
+            <div class="services-title" style="margin: none;padding: 70px 70px">
+                <h1 class="ml16">
+                    <div style="font-size: 40px; color: #d2b871; text-shadow: 1px 1px #000000;">Bienvenue dans notre entreprise</div>
+                </h1>
+                <h2 data-aos="fade-up"
+                data-aos-duration="1000" style="text-align:center;color: #000000;font-size: 20px;"> NL Technologie a été créée afin de vous accompagner tout au long de votre éveloppement pour des projets de transformation digitale. 
+                Ainsi, nous mettons tout en œuvre afin que vous ayez la technologie de pointe adaptée à vos besoins.
                 </h2>
-
-            </div>
+            </div> 
+        </div>
+    </section>
+    <!--End Welcome Section-->
+    <section class="services-section no-padd-top grey-bg" style="background:#f2f4f1;padding: 70px 70px">
+        <div class="auto-container">
             <div class="row clearfix">
-            	
                 <!--Services Block-->
-                <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box hvr-float-shadow">
-                    	<div class="image">
-                        	<a href="mobile.php"><img src="images/service/mobile.png" alt="" /></a>
+                <div data-aos="fade-right"
+                     data-aos-offset="300"
+                     data-aos-easing="ease-in-sine" class="services-block col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box hvr-float-shadow">
+                        <div class="image">
+                            <a href="logiciel.php"><img src="images/service/logiciel.png" alt="" /></a>
                         </div>
                         <div class="lower-content">
-                        	<h3 style="text-align: center;"><a href="mobile.php">Applications Mobiles Hybride et Native</a></h3>
+                            <h3 style="text-align: center;"><a href="logiciel.php">Logiciel sur mesure</a></h3>
+                            <div class="text"></div>
+                            <a href="logiciel.php" class="read-more">Savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Services Block-->
+                <div data-aos="fade-down"
+                     data-aos-offset="300"
+                     data-aos-easing="ease-in-sine" class="services-block col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box hvr-float-shadow">
+                        <div class="image">
+                            <a href="mobile.php"><img src="images/service/mobile.png" alt="" /></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3 style="text-align: center;"><a href="mobile.php">Applications Mobiles</a></h3>
                             <div class="text"></div>
                             <a href="mobile.php" class="read-more">Savoir plus</a>
                         </div>
@@ -238,13 +260,15 @@
                 </div>
                 
                 <!--Services Block-->
-                <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box hvr-float-shadow">
-                    	<div class="image">
-                        	<a href="web.php"><img src="images/service/web2.png" alt="" /></a>
+                <div  data-aos="fade-left"
+                      data-aos-offset="300"
+                      data-aos-easing="ease-in-sine" class="services-block col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box hvr-float-shadow">
+                        <div class="image">
+                            <a href="web.php"><img src="images/service/web2.png" alt="" /></a>
                         </div>
                         <div class="lower-content">
-                        	<h3 style="text-align: center;"><a href="web.php">Site ou Applications Web</a></h3>
+                            <h3 style="text-align: center;"><a href="web.php">Site ou Applications Web</a></h3>
                             <div class="text"></div>
                             <a href="web.php" class="read-more">Savoir plus</a>
                         </div>
@@ -252,13 +276,15 @@
                 </div>
                 
                 <!--Services Block-->
-                <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box hvr-float-shadow">
-                    	<div class="image">
-                        	<a href="bi.php"><img src="images/service/BI.png" alt="" /></a>
+                <div data-aos="fade-right"
+                     data-aos-offset="300"
+                     data-aos-easing="ease-in-sine" class="services-block col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box hvr-float-shadow">
+                        <div class="image">
+                            <a href="bi.php"><img src="images/service/BI.png" alt="" /></a>
                         </div>
                         <div class="lower-content">
-                        	<h3 style="text-align: center;"><a href="bi.php">BI <br> Business Intelligence</a></h3>
+                            <h3 style="text-align: center;"><a href="bi.php">BI</a></h3>
                             <div class="text"></div>
                             <a href="bi.php" class="read-more">Savoir plus</a>
                         </div>
@@ -266,31 +292,49 @@
                 </div>
 
                  <!--Services Block-->
-                <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div data-aos="fade-up"
+                     data-aos-offset="300"
+                     data-aos-easing="ease-in-sine" class="services-block col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box hvr-float-shadow">
                         <div class="image">
                             <a href="iot.php"><img src="images/service/iot.jpg" alt="" /></a>
                         </div>
                         <div class="lower-content">
-                            <h3 style="text-align: center;"><a href="iot.php">IOT <br> Internet of Things</a></h3>
+                            <h3 style="text-align: center;"><a href="iot.php">IOT</a></h3>
                             <div class="text"></div>
                             <a href="iot.php" class="read-more">Savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Services Block-->
+                <div data-aos="fade-left"
+                     data-aos-offset="300"
+                     data-aos-easing="ease-in-sine" class="services-block col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box hvr-float-shadow">
+                        <div class="image">
+                            <a href="contact.php"><img src="images/service/autre.png" alt="" /></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3 style="text-align: center;"><a href="contact.php">Autre Service</a></h3>
+                            <div class="text"></div>
+                            <a href="contact.php.php" class="read-more">Contactez-nous</a>
                         </div>
                     </div>
                 </div>
                 
             </div>
         </div>
+        
     </section>
-    <!--End Welcome Section-->
 
 
     
     <!--Services Section-->
-    <section class="services-section no-padd-top grey-bg">
+    <section class="services-section no-padd-top grey-bg" style="background:#f8f8f8;padding: 90px 70px">
     	<div class="auto-container">
         	<!--Sec Title-->
-            <div class="sec-title">
+            <div class="sec-title-two">
             	<h2>Nos domaines de compétences</h2>
                 <div class="text"></div>
             </div>
@@ -365,13 +409,13 @@
     <!--Call To Action Section-->
     <section class="call-to-action-section" style="background-image:url(images/background/1.jpg)">
     	<div class="auto-container">
-        	<h2> Nous sommes passionnés par notre travail <span> une service à moindre coût </span></h2>
+        	<h2 data-aos="fade-up-right"> Nous sommes passionnés par notre travail <span  data-aos="fade-up-left" > une service à moindre coût </span></h2>
             <div class="number-box clearfix">
             	<div class="pull-left">
-                	<div class="number">+261 34 58 880 22</div>
+                	<div data-aos="fade-down-right" class="number">+261 34 58 880 22</div>
                 </div>
                 <div class="pull-right">
-                	<a href="contact.php" class="theme-btn btn-style-three">Contact</a>
+                	<a href="contact.php" class="theme-btn btn-style-three" data-aos="fade-down-left" >Contact</a>
                 </div>
             </div>
         </div>
@@ -406,7 +450,7 @@
 
                 <script>
                     var xrh=new XMLHttpRequest();
-                    xrh.open('GET','http://127.0.0.1:8000/api/read/equipe');
+                    xrh.open('GET','/back/public/index.php/api/read/equipe');
                     xrh.onreadystatechange=function () {
                         if (this.readyState === 4 && this.status === 200) {
 
@@ -414,7 +458,7 @@
 
                             for(var i=0;i<arr.length;i++) {
                                 document.getElementById("demo").innerHTML += 
-                                '<div class="team-block-two col-lg-3 col-md-4 col-sm-6 col-xs-12"><div class="inner-box"><div class="image"><img src="http://127.0.0.1:8000/uploads/'+arr[i].image +'" width="175px" height="200px"><div class="overlay-box"><div class="content"><h3>' + arr[i].nom + '</h3><div class="designation">' + arr[i].poste+'</div><ul class="social-icon-three"><li><a href="#"><span class="fa fa-facebook"></span></a></li><li><a href="#"><span class="fa fa-linkedin"></span></a></li><li><a href="#"><span class="fa fa-twitter"></span></a></li><li><a href="#"><span class="fa fa-google-plus"></span></a></li></ul></div></div></div><div class="lower-box"><h3>'
+                                '<div class="team-block-two col-lg-3 col-md-4 col-sm-6 col-xs-12"><div class="inner-box"><div class="image"><img src="/back/public/uploads/'+arr[i].image +'" width="175px" height="200px"><div class="overlay-box"><div class="content"><h3>' + arr[i].nom + '</h3><div class="designation">' + arr[i].poste+'</div><ul class="social-icon-three"><li><a href="#"><span class="fa fa-facebook"></span></a></li><li><a href="#"><span class="fa fa-linkedin"></span></a></li><li><a href="#"><span class="fa fa-twitter"></span></a></li><li><a href="#"><span class="fa fa-google-plus"></span></a></li></ul></div></div></div><div class="lower-box"><h3>'
                                     + arr[i].nom +'</br>'+ arr[i].poste+'</h3> </div></div>'
                             }
                         }

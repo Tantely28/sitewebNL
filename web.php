@@ -19,6 +19,54 @@
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
 <style>
+    .light div {
+        position: relative;
+    }
+    .light div::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        background: rgba(255,255,255,.2);
+        border-radius: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+    .light div:hover::before {
+        -webkit-animation: circle .75s;
+        animation: circle .75s;
+    }
+    @-webkit-keyframes circle {
+        0% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 1;
+        }
+        100% {
+            width: 200%;
+            height: 200%;
+            opacity: 0;
+        }
+    }
+    @keyframes circle {
+        0% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 1;
+        }
+        100% {
+            width: 200%;
+            height: 200%;
+            opacity: 0;
+        }
+    }
 </style>
 <body>
 
@@ -48,28 +96,64 @@
                             <li>
                                 <div class="content">
                                     <img src="images/service/web/CREATION.png" />
-                                    <h3 style="color: #dfa60a; text-shadow: 3px 2px 5px #FFFFFF;">Conception Site et Application Web</h3>
-                                    <div style="text-align: center; margin-top: 20px">
-                                        <a href="contact.php"><button class="theme-btn btn-style-one"style="text-align: center">DEMANDEZ UN DEVIS</button></a>
-                                    </div>
+                                    <h3 style="color: #070718; text-shadow: 3px 2px 5px #FFFFFF;">Site vitrine</h3>
+                                    <p>Présente l'entreprise ou la marque ainsi
+                                        que son activité. La forme est libre et ce
+                                        type de site possède généralement une
+                                        mise en forme originale.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="content">
-                                    <img src="images/service/web/CREATION3.png" />
-                                    <h3 style="color: #dfa60a; text-shadow: 3px 2px 5px #FFFFFF;">Développement Site Web</h3>
-                                    <div style="text-align: center; margin-top: 20px">
-                                        <a href="contact.php"><button class="theme-btn btn-style-one" style="text-align: center">DEMANDEZ UN DEVIS</button></a>
-                                    </div>
+                                    <img src="images/service/web/CREATION12.png" />
+                                    <h3 style="color: #3e5082; text-shadow: 3px 2px 5px #FFFFFF;">Site catalogue</h3>
+                                    <p>Présente l'entreprise ou la marque
+                                        ainsi que son activité et tous ses
+                                        produits détaillés</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="content">
-                                    <img src="images/service/web/CREATION5.png" />
-                                    <h3 style="color: #dfa60a; text-shadow: 3px 2px 5px #FFFFFF;">Développement Application Web</h3>
-                                    <div style="text-align: center; margin-top: 20px">
-                                        <a href="contact.php"><button class="theme-btn btn-style-one" style="text-align: center">DEMANDEZ UN DEVIS</button></a>
-                                    </div>
+                                    <img src="images/service/web/CREATION13.png" />
+                                    <h3 style="color: #fc7344; text-shadow: 3px 2px 5px #FFFFFF;">site informatif</h3>
+                                    <p>Regroupe des données sur un sujet
+                                        commun.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content">
+                                    <img src="images/service/web/CREATION14.png" />
+                                    <h3 style="color: #e889af; text-shadow: 3px 2px 5px #FFFFFF;">site E-commerce</h3>
+                                    <p>Boutique en ligne dynamique avec une gestion des contenu et
+                                        l’intégration d’un paiement
+                                        sécurisé.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content">
+                                    <img src="images/service/web/CREATION15.png" />
+                                    <h3 style="color: #004079; text-shadow: 3px 2px 5px #FFFFFF;">site Institutionnel</h3>
+                                    <p>Décrit une organisation, ses activités et ses valeurs. Le site institutionnel
+                                        donne toutes les informations pratiques nécessaires à ses clients ou à ses bénéficiaires.
+                                        Il permet également de mettre en relation les acteurs économiques comme les collectivités
+                                        et les associations.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content">
+                                    <img src="images/service/web/CREATION16.png" />
+                                    <h3 style="color: #4f8624; text-shadow: 3px 2px 5px #FFFFFF;">L'Intranet</h3>
+                                    <p>Accessible uniquement par le personnel d'une même entreprise ou d'une direction,
+                                        l’intranet met à disposition et partage des informations professionnelles.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content">
+                                    <img src="images/service/web/CREATION17.png" />
+                                    <h3 style="color: #eef30b; text-shadow: 3px 2px 5px #FFFFFF;">Application Web</h3>
+                                    <p>Une application web est un programme s’exécutant directement dans un navigateur web.
+                                        Consultable en ligne, il n’est pas nécessaire d’installer un logiciel sur votre ordinateur,
+                                        pour accéder à l’application il faut cependant avoir une connexion à Internet.</p>
                                 </div>
                             </li>
                         </ul>
@@ -88,20 +172,23 @@
                     <div  data-aos="fade-right"
                           data-aos-offset="300"
                           data-aos-easing="ease-in-sine" class="col-md-6">
-                        <img src="images/service/web/CREATION1.png">
+                          <div class="light">
+                            <div><img src="images/service/web/CREATION1.png"></div>
+                            </div>  
+                        
                     </div>
                     <div  class="col-md-6"">
                         <h2 data-aos="flip-right"
                             data-aos-easing="linear"
                             data-aos-duration="700" style="font-size: 20px; text-align: center; color: #FFFFFF; border-left:
-                        6px solid #FFFFFF;background-color: #d2b871;font-weight: bold"">Conception Site ou application Web</h2>
+                        6px solid #FFFFFF;background-color: #d2b871;font-weight: bold">Conception Site ou application Web</h2>
                         <p data-aos="fade-down"
                            data-aos-easing="linear"
                            data-aos-duration="1000" style="text-align: justify; margin-top: 10px;color: black">
                             Nous pouvons réaliser la conception de votre site ou application web c'est à dire
                         l’architecture interactionnelle, l’organisation des pages, l’arborescence et
                         la navigation dans un site web.
-                        Nous pouvons donc tenir en compte ds contraintes spécifiques du support internert,
+                        Nous pouvons donc tenir en compte ds contraintes spécifiques du support internet,
                         notamment en termes d'ergonmie, 'utilisabilité et d'accessibilité.
                         </p>
                         <p data-aos="fade-down"
@@ -126,8 +213,8 @@
                         <p data-aos="fade-down"
                            data-aos-easing="linear"
                            data-aos-duration="800" style="text-align: justify; margin-top: 10px; color: black">
-                            Nous développons votre site web en fonction de votre besoin et activiter
-                            définis dans un cahier des charges.
+                            Nous développons votre site web en fonction de votre activité et vos besoins
+                            selon le cahier de charge.
                         </p>
                         <p data-aos="fade-up"
                            data-aos-anchor-placement="center-center"
@@ -145,7 +232,9 @@
                     <div data-aos="flip-left"
                          data-aos-easing="ease-out-cubic"
                          data-aos-duration="2000" class="col-md-6"">
-                        <img src="images/service/web/CREATION2.png">
+                        <div class="light">
+                            <div><img src="images/service/web/CREATION2.png"></div>
+                            </div>  
                     </div>
                  </div>
             </div>
@@ -154,7 +243,9 @@
                     <div data-aos="fade-right"
                          data-aos-offset="300"
                          data-aos-easing="ease-in-sine" class="col-md-6"">
-                    <img src="images/service/web/CREATION4.png">
+                    <div class="light">
+                            <div><img src="images/service/web/CREATION4.png"></div>
+                            </div>  
                 </div>
                 <div  class="col-md-6"">
                     <h2 data-aos="zoom-in-left"
@@ -164,13 +255,11 @@
                     <p data-aos="fade-down"
                        data-aos-easing="linear"
                        data-aos-duration="1000" style="text-align: justify; margin-top: 10px; color: black;">
-                    Une application web est un logiciel accessible depuis un navigatur web, pouvant fonctionner sur un ordinateur.
-                     Nous pouvons réaliser votre application web à partir de la fonctionnalités de votre
-                    demandes et peut être utiliser d'une manière totalement différente qui
-                convient de votre besoin.
-                    <p data-aos="flip-left"
-                       data-aos-easing="ease-out-cubic"
-                       data-aos-duration="2000" style="color: black;">
+                    Une application web est un logiciel accessible depuis un navigateur web, pouvant fonctionner sur un ordinateur.
+                     Nous pouvons vous fournir l'application web prsonnalisée qui correspond à vos besoin.
+                    <p data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" style="color: black;">
                         - Application Web statique / Application web dynamique <br>
                         - Application web de type e-shop ou e-commerce <br>
                         - Application web portail / Application web animée<br>
@@ -186,7 +275,21 @@
         </div>
     </section>
     <!--End Services Section-->
-
+<!--Call To Action Section-->
+    <section class="call-to-action-section" style="background-image:url(images/background/1.jpg)">
+        <div class="auto-container">
+            <h2 data-aos="fade-up-right"> Nous sommes passionnés par notre travail <span  data-aos="fade-up-left" > une service à moindre coût </span></h2>
+            <div class="number-box clearfix">
+                <div class="pull-left">
+                    <div data-aos="fade-down-right" class="number">+261 34 58 880 22</div>
+                </div>
+                <div class="pull-right">
+                    <a href="contact.php" class="theme-btn btn-style-three" data-aos="fade-down-left" >Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Call To Action Section-->
     <!--Main Footer-->
     <?php
     include('footer.php');

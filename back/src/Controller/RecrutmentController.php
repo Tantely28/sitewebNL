@@ -5,7 +5,11 @@ namespace App\Controller;
 use App\Entity\Recrutment;
 use App\Repository\RecrutmentRepository;
 use Doctrine\Common\Persistence\ObjectManager;
+use phpDocumentor\Reflection\Types\Null_;
+use phpDocumentor\Reflection\Types\This;
+use function PHPSTORM_META\type;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -47,12 +51,14 @@ class RecrutmentController extends AbstractController
         ->add('post',TextType::class,[
             'attr'=>[
                 'placeholder'=>'Poste',
+
             ],
-            'label'=>'Poste'
+            'label'=>'Poste',
         ])
         ->add('profil', TextareaType::class,[
             'attr'=>[
-                'placeholder'=>'Profile...'
+                'placeholder'=>'Profile...',
+                'class'=>'test'
             ]
         ])
         ->add('mission',TextareaType::class,[
@@ -60,6 +66,18 @@ class RecrutmentController extends AbstractController
                 'placeholder'=>'Mission...'
             ]
         ])
+
+            ->add('fichier',FileType::class,[
+                'data_class'=>null,
+                'required'=>false,
+                'label'=>'Fichier',
+            ])
+            ->add('autre',TextareaType::class,[
+                'attr'=>[
+                    'placeholder'=>'autre',
+                ],
+                'label'=>'Autres'
+            ])
         ->getForm();
 
         $form->handleRequest($request);
@@ -67,6 +85,12 @@ class RecrutmentController extends AbstractController
         if($form->isSubmitted() && $form->isValid())
         {
             $em=$this->getDoctrine()->getManager();
+
+            $file=$recrutement->getFichier();
+            $filename=md5(uniqid()).'.'.$file->guessExtension();
+            $file->move($this->getParameter('upload_directory'), $filename);
+            $recrutement->setFichier($filename);
+
             $em->persist($recrutement);
             $em->flush();
             return $this->redirectToRoute('affiche_recrut');
@@ -87,8 +111,10 @@ class RecrutmentController extends AbstractController
             ->add('post')
             ->add('profil')
             ->add('mission')
+            ->add('autre')
             ->getForm();
         $form->handleRequest($request);
+
         if($form->isSubmitted() && $form->isValid())
         {
             $this->em->flush();
@@ -97,6 +123,38 @@ class RecrutmentController extends AbstractController
         return $this->render('recrutment/update.html.twig',[
             'pro'=>$recrutment,
             'form'=>$form->createView()]);
+    }
+
+    /**
+     * @param Recrutment $recrutment
+     * @param Request $request
+     * @return Response
+     * @Route("/updatephoto/recrutment/{id}", name="updatephot_recrut")
+     */
+    public  function updatePhoto(Recrutment $recrutment, Request $request){
+        $form=$this->createFormBuilder($recrutment)
+            ->add('fichier', FileType::class,[
+                'data_class'=>null
+            ])
+            ->getForm();
+        $form->handleRequest($request);
+        if($form->isSubmitted() && $form->isValid()){
+            $em=$this->getDoctrine()->getManager();
+
+            $file=$recrutment->getFichier();
+            $filename=md5(uniqid()).'.'.$file->guessExtension();
+            $file->move($this->getParameter('upload_directory'), $filename);
+            $recrutment->setFichier($filename);
+
+            $em->persist($recrutment);
+            $em->flush();
+            return $this->redirectToRoute('show_recrutment',['id'=>$recrutment->getId()]);
+
+        }
+
+        return $this->render('recrutment/modphoto.html.twig',[
+            'form'=>$form->createView()
+        ]);
     }
 
     /**
@@ -111,7 +169,7 @@ class RecrutmentController extends AbstractController
         ]);
     }
 
-    /**
+       /**
      * @Route("/delete/recrutement/{id}", name="delete_recrut")
      * @param Recrutment $recrutment
      * @return RedirectResponse

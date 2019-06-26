@@ -10,6 +10,7 @@ namespace App\Controller\api;
 
 
 use App\Entity\Devis;
+use App\Entity\Recrutment;
 use App\Entity\Visitor;
 use App\Repository\EquipeRepository;
 use App\Repository\RecrutmentRepository;
@@ -59,7 +60,8 @@ class ApiController extends AbstractController
                     'id'=>$posts->getId(),
                     'post'=>$posts->getPost(),
                     'profile'=>$posts->getProfil(),
-                    'mission'=>$posts->getMission()
+                    'mission'=>$posts->getMission(),
+                    'image'=>$posts->getFichier()
                 ];
             }
 
@@ -75,16 +77,16 @@ class ApiController extends AbstractController
     public function visitor(Request $request):JsonResponse
     {
         $visitor=new Visitor();
-        if (!empty($request->get('name')) && !empty($request->get('telephone')) && !empty($request->get('email')) && !empty($request->get('message')))
+        if (!empty($request->get('name')) && !empty($request->get('titre')) && !empty($request->get('email')) && !empty($request->get('message')))
         {
             $visitor->setName($request->get('name'));
-            $visitor->setTelephone($request->get('telephone'));
+            $visitor->setTitre($request->get('titre'));
             $visitor->setEmail($request->get('email'));
             $visitor->setMessage($request->get('message'));
             $em=$this->getDoctrine()->getManager();
             $em->persist($visitor);
             $em->flush();
-            return new JsonResponse(['message' => 'Visiteur inserée'], Response::HTTP_OK);
+            return new JsonResponse(['message' => 'Votre message est envoyée'], Response::HTTP_OK);
 
         }else{
             return new JsonResponse(['message' => 'Veuillez remplir tous les champ','test'=>$request->get('name')], Response::HTTP_OK);
@@ -141,4 +143,32 @@ class ApiController extends AbstractController
             return new JsonResponse($formatted);
         }
     }
+
+    /**
+     * @Rest\Get("/show/recrut/{id}")
+     * @param Recrutment $recrutment
+     * @return JsonResponse
+     */
+    public function findById(Recrutment $recrutment): JsonResponse
+    {
+        $recru = $this->recrutmentRepository->find($recrutment->getId());
+        if (empty($recru)) {
+            return new JsonResponse(['message' => 'Recrutement not found'], Response::HTTP_OK);
+        } else {
+            $formatted = [];
+                $formatted[] = [
+                    'id' => $recru->getId(),
+                    'post' => $recru->getPost(),
+                    'profile' => $recru->getProfil(),
+                    'mission' => $recru->getMission(),
+                    'image' => $recru->getFichier(),
+                    'autre'=>$recru->getAutre()
+                ];
+            }
+
+            return new JsonResponse($formatted);
+
+
+        }
+
 }

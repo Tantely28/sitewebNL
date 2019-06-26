@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Equipe;
+use App\Entity\Recrutment;
 use App\Repository\EquipeRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
@@ -72,7 +73,6 @@ class EquipeController extends AbstractController
             $em->flush();
             return $this->redirectToRoute('read_equipe');
         }
-
         return $this->render('equipe/create.html.twig',['form'=>$form->createView()]);
     }
 
@@ -118,10 +118,30 @@ class EquipeController extends AbstractController
                     'placeholder'=>'Poste'
                 ]
             ])
-            ->add('image',FileType::class,[
-                'data_class'=>null,
-                'required'=>false,
-                'label'=>'Image',
+            ->getForm();
+        $form->handleRequest($request);
+        if($form->isSubmitted() && $form->isValid()){
+            $em=$this->getDoctrine()->getManager();
+
+            $em->persist($equipe);
+            $em->flush();
+            return $this->redirectToRoute('read_equipe');
+        }
+
+        return $this->render('equipe/edit.html.twig',['form'=>$form->createView()]);
+    }
+
+
+    /**
+     * @param Equipe $equipe
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|Response
+     * @Route("/editePhoto/equipe/{id}", name="editePhoto_equipe")
+     */
+    public  function editePhoto(Equipe $equipe, Request $request){
+        $form=$this->createFormBuilder($equipe)
+            ->add('image', FileType::class,[
+                'data_class'=>null
             ])
             ->getForm();
         $form->handleRequest($request);
@@ -135,15 +155,19 @@ class EquipeController extends AbstractController
 
             $em->persist($equipe);
             $em->flush();
-            return $this->redirectToRoute('read_equipe');
+            return $this->redirectToRoute('show_equipe',['id'=>$equipe->getId()]);
+
         }
 
-        return $this->render('equipe/edit.html.twig',['form'=>$form->createView()]);
+        return $this->render('equipe/updatequip.html.twig',[
+            'form'=>$form->createView()
+        ]);
     }
 
     /**
      * @param Equipe $equipe
      * @Route("/delete/equipe/{id}", name="delete_equipe")
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
     public function delete(Equipe $equipe)
     {

@@ -15,7 +15,7 @@
                                     	<a href="index.php"><img src="images/logo.png" alt="" /></a>
                                     </div>
                                     <div class="number">+261 34 58 880 22</div>
-                                    <div class="text">contact@nl-technology.org <br> Anjanahary II 137 101 Antananarivo-Madagascar</div>
+                                    <div class="text">nltechnology19@gmail.com <br> Anjanahary II 137<br> 101 Antananarivo - Madagascar</div>
                                 </div>
                             </div>
                             
@@ -70,10 +70,8 @@
                                             </form>
                                         </div>-->
                                         <ul class="social-icon-one">
-                                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                            <li><a href="https://www.facebook.com/NL-Technologie-Dev-2316701511938060/"><span class="fa fa-facebook"></span></a></li>
+                                            <li><a href="https://www.google.com/gmail/"><span class="fa fa-envelope"></span></a></li>
                                         </ul>
                                     </div>
                                 </div>
